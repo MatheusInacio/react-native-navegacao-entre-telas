@@ -1,10 +1,10 @@
-import { AppRegistry } from 'react-native';
-import App from "./App.js";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const appName = "orgsNavegacao";
-
-AppRegistry.registerComponent(appName, () => App);
-AppRegistry.runApplication(appName, {
-    // Mount the react-native app in the "root" div of index.html
-    rootTag: document.getElementById("root"),
-});
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+ document.getElementById('root')
+);

@@ -17,7 +17,7 @@ export default function Produtores({ melhoresProdutores }) {
     </>
   }
 
-  return <FlatList
+  return <FlatList 
     data={lista}
     renderItem={
       ({ item }) => <Produtor {...item} aoPressionar={() => {}} />
